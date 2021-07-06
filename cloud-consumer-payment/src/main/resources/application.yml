@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka, http://localhost:9002/eureka
+    # 是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+    fetchRegistry: true
+  instance:
+    instance-id: consumer-payment8082
+    # 访问eureka主页时显示ip地址
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: consumer-payment

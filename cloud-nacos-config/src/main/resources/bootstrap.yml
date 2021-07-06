@@ -1,0 +1,14 @@
+server:
+  port: 3377
+spring:
+  application:
+    name: cloud-nacos-config
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848   # nacos本地服务器地址
+        file-extension: yaml   # 配置文件的格式，默认properties
+        group: TEST_GROUP  # 分组，默认DEFAULT_GROUP
+        refresh:
+          enabled: false
+        namespace: 155a7fd7-6834-4787-80f7-35f56dd9f8fb

@@ -1,0 +1,13 @@
+server:
+  port: 9001
+eureka:
+  instance:
+    hostname: eureka-server01   # eureka服务端的名称
+  client:
+    # false表示不向注册中心注册自己
+    register-with-eureka: false
+    # true的时候Eureka client在启动时会从Eureka server获取注册信息并缓存到本地，之后只会增量获取信息, false则是每次全量获取
+    fetch-registry: false
+    service-url:
+      # eureka的url,单机指向自己，集群指向其它eureka
+      defaultZone: http://127.0.0.1:9002/eureka/
