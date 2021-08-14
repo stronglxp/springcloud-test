@@ -23,6 +23,7 @@
         <module>cloud-nacos-provider</module>
         <module>cloud-nacos-consumer</module>
         <module>cloud-nacos-config</module>
+        <module>cloud-sentinel-service</module>
     </modules>
 
     <!--统一管理jar包版本号-->

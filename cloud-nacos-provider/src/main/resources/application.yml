@@ -8,6 +8,7 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+        # server-addr: 192.168.73.128:1111
 
 # 暴露端口
 management:

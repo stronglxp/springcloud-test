@@ -13,8 +13,6 @@ import reactor.core.publisher.Mono;
 import java.util.Date;
 
 /**
- * gateway 内置了很多的过滤器：https://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.2.1.RELEASE/reference/html/#gatewayfilter-factories
- *
  * 这里自定义一个全局filter，实现 GlobalFilter 和 Ordered接口，所有的请求访问都要先经过这个全局 filter验证
  */
 @Component
